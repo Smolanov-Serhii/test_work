@@ -1,0 +1,31 @@
+$px: .06945;
+$pxmf: 3.841;
+$pxmd: .060125;
+$pxmt: .075222;
+$pxm: $px * $pxmf;
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../src/fonts/RobotoRegular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../src/fonts/RobotoBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('../src/fonts/RobotoMedium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../src/fonts/RobotoLight.ttf') format("truetype");
+}
+
+body {
+
+
+}
+
