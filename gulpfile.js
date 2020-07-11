@@ -23,6 +23,7 @@ gulp.task('bundle', function () {
     return gulp.src([
 
         'src/css/normalize.min.css',
+        'src/css/swiper-bundle.css',
         'src/css/styles.css'
     ])
         .pipe(concatCss("bundle.css"))
@@ -51,6 +52,7 @@ gulp.task('autoprefix', function () {
 gulp.task('scripts', function () {
     return gulp.src([
         'src/js/jquery.js',
+        'src/js/swiper-bundle.js',
         'src/js/scripts.js'
     ])
         .pipe(concat('bundle.js'))
