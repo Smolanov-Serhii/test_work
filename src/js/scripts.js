@@ -1,11 +1,10 @@
 $( document ).ready(function() {
-    new Vivus('animate_svg', {duration: 200}, console.log('done'));
+    // new Vivus('animate_svg', {duration: 200}, console.log('done'));
     initSwiper();
     function initSwiper() {
         var scene = document.getElementById('main_container');
         var parallaxInstance = new Parallax(scene, {
             relativeInput: true,
-            loop: false,
             pointerEvents: false
         });
 

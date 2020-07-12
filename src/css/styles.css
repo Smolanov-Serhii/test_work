@@ -15,162 +15,180 @@
   src: url("../src/fonts/TTTravelsBold.ttf") format("truetype"); }
 
 body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   cursor: url("../img/svg/cursor.svg"), default;
-  transition-duration: 0.5s; }
-  body header {
-    z-index: 100;
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%; }
-    body header .logo {
-      position: absolute;
-      left: 3.3336vw;
-      top: 3.12525vw; }
-    body header nav {
-      position: absolute;
-      top: 2.0835vw;
-      right: 2.0835vw; }
-      body header nav .main_menu__item:hover a {
-        font-weight: 800; }
-      body header nav .main_menu__item a {
-        text-decoration: none;
-        font-family: TTTravelsLight;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 0.76395vw;
-        line-height: 0.90285vw;
-        text-align: right;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #000000; }
-    body header .socials {
-      position: absolute;
-      bottom: 30px;
-      left: 30px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-      body header .socials > div:first-child {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center; }
-        body header .socials > div:first-child:after {
-          content: "";
-          width: 56px;
-          height: 1px;
-          background-color: rgba(57, 57, 57, 0.2);
-          margin-left: 10px;
-          margin-right: 10px; }
-      body header .socials > div a {
-        font-family: TTTravelsLight;
-        font-size: 11px;
-        line-height: 13px;
-        display: flex;
-        align-items: flex-end;
-        letter-spacing: 0.02em;
-        color: #000000;
-        text-decoration: none; }
-        body header .socials > div a:hover {
-          font-weight: 800; }
-  body #main_container {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    overflow: hidden; }
-    body #main_container .background_image {
-      pointer-events: none;
-      position: absolute;
+  display: flex;
+  align-items: center; }
+  body .main_container {
+    overflow: visible;
+    height: auto;
+    display: flex;
+    align-items: center; }
+    body .main_container header {
+      z-index: 100;
+      display: block;
       width: 100%;
-      height: 100%;
+      position: absolute;
       top: 0;
       left: 0;
-      display: flex;
-      justify-content: center;
-      padding-top: 0.48615vw;
-      padding-left: 32.84985vw;
-      padding-right: 24.8631vw;
-      box-sizing: border-box;
-      z-index: -2; }
-    body #main_container .slider_wrapper {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0; }
-      body #main_container .slider_wrapper .photo_slider {
+      height: 100%; }
+      body .main_container header .logo {
+        position: absolute;
+        left: 3.3336vw;
+        top: 3.12525vw; }
+      body .main_container header nav {
+        position: absolute;
+        top: 2.0835vw;
+        right: 2.0835vw; }
+        body .main_container header nav input, body .main_container header nav label {
+          display: none; }
+        body .main_container header nav .main_menu__item {
+          text-align: right; }
+          body .main_container header nav .main_menu__item:hover a {
+            font-weight: 800; }
+          body .main_container header nav .main_menu__item a {
+            text-decoration: none;
+            font-family: TTTravelsLight;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            text-align: right;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: #000000; }
+      body .main_container header .socials {
+        position: absolute;
+        bottom: 3.40305vw;
+        left: 3.40305vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; }
+        body .main_container header .socials div:first-child {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center; }
+          body .main_container header .socials div:first-child:after {
+            content: "";
+            width: 3.8892vw;
+            height: 1px;
+            background-color: rgba(57, 57, 57, 0.2);
+            margin-left: 0.6945vw;
+            margin-right: 0.6945vw; }
+        body .main_container header .socials div a {
+          font-family: TTTravelsLight;
+          font-size: 0.76395vw;
+          line-height: 0.90285vw;
+          display: flex;
+          align-items: flex-end;
+          letter-spacing: 0.02em;
+          color: #000000;
+          text-decoration: none; }
+          body .main_container header .socials div a:hover {
+            font-weight: 800; }
+    body .main_container #main_container {
+      height: 100vh;
+      width: 100vw;
+      position: relative; }
+      body .main_container #main_container .background_image {
+        pointer-events: none;
         position: absolute;
         width: 100%;
         height: 100%;
-        z-index: -1;
-        padding-left: 15.4179vw;
-        padding-right: 14.3067vw;
-        padding-top: 5.06985vw;
+        top: 0;
+        left: 0;
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        padding-top: 0.48615vw;
+        padding-left: 32.84985vw;
+        padding-right: 24.8631vw;
         box-sizing: border-box;
-        list-style: none; }
-        body #main_container .slider_wrapper .photo_slider__item .image_container {
-          background-color: white;
-          box-shadow: 0 0.9723vw 1.9446vw rgba(0, 0, 0, 0.25), 0 0.6945vw 0.6945vw rgba(0, 0, 0, 0.22);
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat; }
-        body #main_container .slider_wrapper .photo_slider__item:nth-child(1) {
-          padding-top: 8.0562vw;
-          margin-right: 1.2501vw; }
-          body #main_container .slider_wrapper .photo_slider__item:nth-child(1) .image_container {
-            width: 16.5291vw;
-            height: 22.98795vw;
-            transform: rotate(1.1deg);
-            background-size: 120%; }
-        body #main_container .slider_wrapper .photo_slider__item:nth-child(2) {
-          margin-top: -0.4167vw;
-          padding-top: 0; }
-          body #main_container .slider_wrapper .photo_slider__item:nth-child(2) .image_container {
-            width: 33.0582vw;
-            height: 48.7539vw;
-            transform: rotate(1.5deg); }
-        body #main_container .slider_wrapper .photo_slider__item:nth-child(3) {
-          padding-top: 28.4745vw;
-          margin-left: -5.1393vw; }
-          body #main_container .slider_wrapper .photo_slider__item:nth-child(3) .image_container {
-            width: 23.96025vw;
-            height: 16.5291vw;
-            transform: rotate(1.1deg); }
-  body .swiper-container {
-    position: absolute;
-    width: 100%;
-    top: 25.90485vw;
-    z-index: 200;
-    cursor: url("../img/svg/cursor_hover.svg"), default;
-    transition-duration: 0.5s; }
-    body .swiper-container .swiper-wrapper .swiper-slide-prev {
-      transform: rotate(-1.5deg); }
-    body .swiper-container .swiper-wrapper .swiper-slide-next {
-      transform: rotate(1.5deg); }
-    body .swiper-container .swiper-wrapper .swiper-slide-prev, body .swiper-container .swiper-wrapper .swiper-slide-next {
+        z-index: -2;
+        align-items: center; }
+        body .main_container #main_container .background_image svg {
+          height: a;
+          width: 100%; }
+      body .main_container #main_container .slider_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex !important;
+        align-items: center; }
+        body .main_container #main_container .slider_wrapper .photo_slider {
+          position: relative;
+          width: 100%;
+          height: auto;
+          z-index: -1;
+          padding-left: 15.4179vw;
+          padding-right: 14.3067vw;
+          padding-top: 5.06985vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          box-sizing: border-box;
+          list-style: none; }
+          body .main_container #main_container .slider_wrapper .photo_slider__item .image_container {
+            background-color: white;
+            box-shadow: 0 0.9723vw 1.9446vw rgba(0, 0, 0, 0.25), 0 0.6945vw 0.6945vw rgba(0, 0, 0, 0.22);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+          body .main_container #main_container .slider_wrapper .photo_slider__item:nth-child(1) {
+            padding-top: 8.0562vw;
+            margin-right: 1.2501vw; }
+            body .main_container #main_container .slider_wrapper .photo_slider__item:nth-child(1) .image_container {
+              width: 16.5291vw;
+              height: 22.98795vw;
+              transform: rotate(1.1deg);
+              background-size: 120%; }
+          body .main_container #main_container .slider_wrapper .photo_slider__item:nth-child(2) {
+            margin-top: -0.4167vw;
+            padding-top: 0; }
+            body .main_container #main_container .slider_wrapper .photo_slider__item:nth-child(2) .image_container {
+              width: 33.0582vw;
+              height: 48.7539vw;
+              transform: rotate(1.5deg); }
+          body .main_container #main_container .slider_wrapper .photo_slider__item:nth-child(3) {
+            padding-top: 28.4745vw;
+            margin-left: -5.1393vw; }
+            body .main_container #main_container .slider_wrapper .photo_slider__item:nth-child(3) .image_container {
+              width: 23.96025vw;
+              height: 16.5291vw;
+              transform: rotate(1.1deg); }
+    body .main_container .swiper-container {
+      position: absolute;
+      width: 100%;
+      top: calc(50% - 72px);
+      z-index: 200;
+      cursor: url("../img/svg/cursor_hover.svg"), default;
       transition-duration: 0.5s; }
-      body .swiper-container .swiper-wrapper .swiper-slide-prev span, body .swiper-container .swiper-wrapper .swiper-slide-next span {
-        -webkit-text-stroke: 1px #580300;
-        color: transparent !important;
+      body .main_container .swiper-container .swiper-wrapper .swiper-slide-prev {
+        transform: rotate(-1.5deg); }
+      body .main_container .swiper-container .swiper-wrapper .swiper-slide-next {
+        transform: rotate(1.5deg); }
+      body .main_container .swiper-container .swiper-wrapper .swiper-slide-prev, body .main_container .swiper-container .swiper-wrapper .swiper-slide-next {
         transition-duration: 0.5s; }
-    body .swiper-container .swiper-wrapper .swiper-slide {
-      font-family: SchnyderXCondXLBold;
-      font-size: 8.7216vw;
-      line-height: 86%;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      text-transform: uppercase;
-      color: #580300;
-      mix-blend-mode: darken;
-      width: calc((100vw / 3) + 13.333vw);
-      justify-content: center; }
-      body .swiper-container .swiper-wrapper .swiper-slide span {
+        body .main_container .swiper-container .swiper-wrapper .swiper-slide-prev span, body .main_container .swiper-container .swiper-wrapper .swiper-slide-next span {
+          -webkit-text-stroke: 1px #580300;
+          color: transparent !important;
+          transition-duration: 0.5s; }
+      body .main_container .swiper-container .swiper-wrapper .swiper-slide {
+        font-family: SchnyderXCondXLBold;
+        font-size: 11.6676vw;
+        line-height: 86%;
+        display: flex;
+        align-items: center;
         text-align: center;
-        transition-duration: 0.5s; }
+        text-transform: uppercase;
+        color: #580300;
+        mix-blend-mode: darken;
+        width: calc(100vw - 36.805vw);
+        justify-content: center; }
+        body .main_container .swiper-container .swiper-wrapper .swiper-slide span {
+          text-align: center;
+          transition-duration: 0.5s; }

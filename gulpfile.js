@@ -24,7 +24,9 @@ gulp.task('bundle', function () {
 
         'src/css/normalize.min.css',
         'src/css/swiper-bundle.css',
-        'src/css/styles.css'
+        'src/css/styles.css',
+        'src/css/media.css'
+
     ])
         .pipe(concatCss("bundle.css"))
         .pipe(gulp.dest('dist/'));
