@@ -1,11 +1,14 @@
 $( document ).ready(function() {
+    new Vivus('animate_svg', {duration: 200}, console.log('done'));
     initSwiper();
     function initSwiper() {
         var scene = document.getElementById('main_container');
         var parallaxInstance = new Parallax(scene, {
             relativeInput: true,
+            loop: false,
             pointerEvents: false
         });
+
 
         var mySwiper = new Swiper('.swiper-container', {
             centeredSlides: true,
@@ -31,9 +34,7 @@ $( document ).ready(function() {
             ListenPhoto();
         })
     }
-    if ($(".swiper-slide-active").length){
-        ListenPhoto();
-    }
+
     function ListenPhoto(){
         var adressdotterimage = $('.swiper-slide-active span').attr('datasrc');
         var UrlArray = adressdotterimage.split(',');
